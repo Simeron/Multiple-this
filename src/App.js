@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { NumberGrid, MapThis, Apped} from './NumberGrid';
+import { NumberGrid, MapThis, Apped, CurrentNumber } from './NumberGrid';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       {/* <NumberGrid /> */}
       <MapThis />
       <Apped />
+      <CurrentNumber />
     </div>
   );
 }
