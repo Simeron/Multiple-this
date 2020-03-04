@@ -1,17 +1,17 @@
 import React, { useEffect, useState, Fragment } from 'react';
 import './NumberGridStyles.css';
 
-// to get a list of all the numbers
+// Get all the numbers from 1 - 144
 let numbersStart = 1;
 let numbersEnd = 144;
 let allNumbers = Array(numbersEnd - numbersStart + 1)
     .fill()
     .map(() => numbersStart++);
 
-function MultipleFinder(allthenumbers, multipleno) {
+function MultipleFinder(allthenumbers, findmultipleof) {
     var multiples = [allNumbers];
     for (var i = 0; i < allthenumbers.length; i++) {
-        if (allthenumbers[i] % multipleno === 0) { // divide by the number
+        if (allthenumbers[i] % findmultipleof === 0) { // divide by the number
             multiples.push(allthenumbers[i]); // add the current multiple found to the multiples array
         }
     }
@@ -21,16 +21,14 @@ function MultipleFinder(allthenumbers, multipleno) {
 console.log(MultipleFinder(allNumbers, 20)); // Output: [4, 6, 8]
 
 
-// WORKING TO DISPLAY ALL NUMBERS!!!!!!!!!
-//   code to map stuff in react
+// Map all 1 - 144 numbers to the grid
 export const MapThis = () => {
+
     function showTheMultiples(allNumbers) {
         console.log(allNumbers);
         MultipleFinder(allNumbers, 6);
         console.log(MultipleFinder(allNumbers, 10))
     }
-
-
     return (
         <div>
             <div className="wrapper">
@@ -45,11 +43,6 @@ export const MapThis = () => {
         </div>
     )
 }
-
-export default MapThis;
-// export default FunctionComponentWithRef;
-
-// try and use usestate/ useeffect to try and get the current value and then try and sort the loop thing out I'm thinking something like this onChange={e => setColor(e.target.value)}
 
 // https://stackoverflow.com/questions/12491101/javascript-create-array-from-for-loop - looping nos
 // https://codepen.io/jh3y/pen/NeLrxr - changing background colour
