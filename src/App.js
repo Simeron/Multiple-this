@@ -6,8 +6,8 @@ import {MapThis, MultipleList} from './NumberGrid';
 function App() {
   return (
     <div className="App">
-      <MapThis />
-      {/* <MultipleList /> */}
+      {/* <MapThis /> */}
+      <MultipleList />
     </div>
   );
 }
