@@ -1,20 +1,23 @@
-body {
-    margin: 40px;
+  /* Start of styles for the grid boxes  */
+  .container {
+    display: flex;
+    padding-top: 2.5%;
   }
-  
+
   .wrapper {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 200px 200px 200px;
     grid-gap: 10px;
-    background-color: #fff;
     color: #444;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .box {
     background-color: #444;
     color: #fff;
     border-radius: 5px;
-    padding: 20px;
+    padding: 60px;
     font-size: 150%;
   }
 
@@ -22,6 +25,21 @@ body {
     background-color: rgb(138, 224, 145);
     color: #000;
     border-radius: 5px;
-    padding: 20px;
+    padding: 60px;
     font-size: 150%;
   }
+    /* End of styles for the grid boxes  */
+
+  /* Start of tablet and mobile devices */
+  @media only screen and (max-width: 768px) {
+    .wrapper {
+      grid-template-columns: 200px 200px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .wrapper {
+      grid-template-columns: 200px;
+    }
+  }
+  /* End of tablet and mobile devices */
