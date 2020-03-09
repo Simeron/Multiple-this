@@ -1,3 +1,7 @@
+##Multiply this
+#####This is a project designed for kids to help them to learn their timestables. The idea behind it is for the user to select on one of the numbers from the grid and when they do all the multiples of that number between 1 - 44 with change colour.
+
+To build this project I have used `create-react-app` see link below for more information. I have also kept a lot of the original commands for running the project. 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

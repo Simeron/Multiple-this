@@ -1,7 +1,24 @@
+  /* Start general body and content / font styles */
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  /* End general body and content / font styles */
+
   /* Start of styles for the grid boxes  */
   .container {
     display: flex;
     padding-top: 2.5%;
+    text-align: center;
   }
 
   .wrapper {
